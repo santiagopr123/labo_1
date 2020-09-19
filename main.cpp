@@ -4,6 +4,7 @@ using namespace std;
 
 int potencia(int numero);
 int primos(int number);
+int multiplos(int num);
 
 
 int main()
@@ -50,9 +51,41 @@ int main()
     cout<<s;
     */
 
-    int x = 0;
+    /*
+    int x = 0,z = 0,suma = 0;
     cout<<"ingrese un numero: ";cin>>x;
-    cout<<primos(x);
+    for(int i=2;i<=x;i++)
+    {
+        z = primos(i);
+        if(z == 0)
+        {
+            suma += i;
+        }
+    }
+
+    cout<<"la suma de los numeros primos contenidos en x es: "<<suma;
+    */
+
+    /*
+    int numero = 0,suma = 0;
+    cout<<"ingrese el numero para descubrir el maximo factor primo: ";cin>>numero;
+
+    for(int i = 1; i<= numero; i++)
+    {
+        if(numero%i == 0 && primos(i)==0 && numero != i)
+        {
+            if(i > suma)
+            {
+                suma = i;
+            }
+        }
+    }
+
+    cout<<"el maximo factor primo es: "<<suma;
+    */
+
+
+
 
 
     return 0;
@@ -72,7 +105,7 @@ int potencia(int numero)
 int primos(int number)
 {
     int suma = 0;
-    for(int i = 0; i<= number; i++)
+    for(int i = 1; i<= number; i++)
     {
         if(number % i == 0)
         {
@@ -89,7 +122,13 @@ int primos(int number)
     }
 }
 
+int multiplos(int num)
+{
+    for(int i = 1; i<= num; i++)
+    {
 
+    }
+}
 
 
 
